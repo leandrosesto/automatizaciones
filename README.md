@@ -63,4 +63,4 @@ Para garantizar soluciones rentables, utilizo código propio apoyado en infraest
 
 ¿Tienes un proceso manual que te consume tiempo? Agendemos una reunión de 15 minutos. Analizaré tu flujo en pantalla compartida y te propondré la arquitectura técnica ideal.
 
-🔗 [Portafolio Oficial](https://leandrosesto-aut.github.io/automatizaciones/) | 📱 [WhatsApp Directo](https://wa.me/2235449927) | ✉️ leandromsesto@gmail.com
+🔗 [Portafolio Oficial](https://leandrosesto.github.io/automatizaciones/) | 📱 [WhatsApp Directo](https://wa.me/2235449927) | ✉️ leandromsesto@gmail.com
