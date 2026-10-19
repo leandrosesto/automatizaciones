@@ -7,450 +7,395 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-3D01JZLHBX');
   </script>
 
   <meta charset="UTF-8">
   <meta name="google-site-verification" content="PUQziODFIv7ALRA80q6s1pyXXObPM2eVxE36AImvKco" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
-  <title>Leandro Sesto | Automatizaciones con Python y Google Apps Script</title>
-  
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Desarrollo automatizaciones y agentes con Python y Google Sheets para ahorrar tiempo, eliminar errores y agilizar tus procesos de negocio.">
+
+  <title>Leandro Sesto | Automatización de tareas administrativas</title>
+  <meta name="description" content="Automatizo las tareas administrativas repetitivas de tu empresa: planillas, PDFs, carpetas e informes. Trabajo remoto para toda Latinoamérica. Diagnóstico inicial sin costo.">
   <meta name="robots" content="index, follow">
-  
-  <!-- Open Graph / Facebook -->
+  <link rel="canonical" href="https://leandrosesto.github.io/automatizaciones/">
+
   <meta property="og:type" content="website">
-  <meta property="og:url" content=" https://leandrosesto-aut.github.io/automatizaciones">
-  <meta property="og:title" content="Leandro Sesto | Automatizaciones Profesionales">
-  <meta property="og:description" content="Automatiza el procesamiento de datos de tu empresa con Python y Google Apps Script.">
-  
-  <!-- Favicon -->
-  <link rel="icon" href="https://www.gstatic.com/images/branding/productlogos/sites_2026/v2/ico/sites_2026_16dp.ico" type="image/x-icon">
-  
-  <!-- FontAwesome Icons for clean SVG icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <!-- Custom Stylesheet -->
+  <meta property="og:locale" content="es_LA">
+  <meta property="og:url" content="https://leandrosesto.github.io/automatizaciones/">
+  <meta property="og:title" content="Leandro Sesto | Automatización de tareas administrativas">
+  <meta property="og:description" content="Tu equipo no debería pasar el día copiando datos de una planilla a otra. Automatizo esas tareas, a medida y con precio cerrado.">
+  <meta property="og:image" content="https://leandrosesto.github.io/automatizaciones/assets/leandro-sesto.jpg">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Background Canvas for Interactive Particles -->
-  <canvas id="canvas-bg" class="hero-canvas"></canvas>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <!-- ==========================================================================
-       NAVBAR
-       ========================================================================== -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="#hero" class="logo">
-        <span class="logo-icon"></span>Leandro Sesto | Automatizaciones
+  <!-- NAVEGACIÓN -->
+  <header class="nav" id="navbar">
+    <div class="wrap nav-inner">
+      <a href="#inicio" class="brand" aria-label="Leandro Sesto, inicio">
+        <span class="brand-mark" aria-hidden="true">LS</span>
+        <span class="brand-text">Leandro Sesto<small>Automatización administrativa</small></span>
       </a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
-        <i class="fa-solid fa-bars"></i>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span>
       </button>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="#hero" class="nav-link active">Inicio</a></li>
-        <li><a href="#problemas" class="nav-link">Desafíos</a></li>
-        <li><a href="#portafolio" class="nav-link">Casos de Éxito</a></li>
-        <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
-        <li><a href="#contacto" class="nav-link">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- ==========================================================================
-       HERO SECTION
-       ========================================================================== -->
-  <header id="hero" class="hero">
-    <div class="glow-blob blob-1"></div>
-    <div class="glow-blob blob-2"></div>
-    
-    <div class="container">
-      <div class="hero-content reveal active">
-        <div class="badge-wrapper">
-          <span class="tech-badge"><i class="fa-brands fa-python"></i> Python Developer</span>
-          <span class="tech-badge cyan"><i class="fa-brands fa-google"></i> Google Apps Script</span>
-        </div>
-        <h1 class="hero-title">
-          Optimiza tu negocio eliminando las <span class="text-gradient">tareas manuales</span>
-        </h1>
-        <p class="hero-description">
-          Desarrollo soluciones de automatización a medida con Python y Google Scripts. Conecta tus sistemas, elimina fallas operativas y libera a tu equipo para lo verdaderamente estratégico.
-        </p>
-        <div class="cta-group">
-          <a href="https://wa.me/2235449927" target="_blank" class="btn btn-whatsapp">
-            <i class="fa-brands fa-whatsapp"></i> Escríbeme por WhatsApp
-          </a>
-          <a href="mailto:leandromsesto@gmail.com" class="btn btn-secondary">
-            <i class="fa-regular fa-envelope"></i> Enviar un Email
-          </a>
-        </div>
-        <div class="hero-trust-indicator">
-          <span><i class="fa-solid fa-check"></i> Diagnóstico sin costo</span>
-          <span><i class="fa-solid fa-check"></i> Python & Google Cloud Developer</span>
-          <span><i class="fa-solid fa-check"></i> Código 100% propio y seguro</span>
-        </div>
-      </div>
-      
-      <div class="hero-visual reveal active">
-        <div class="code-window">
-          <div class="code-header">
-            <span class="dot dot-red"></span>
-            <span class="dot dot-yellow"></span>
-            <span class="dot dot-green"></span>
-            <span class="code-title">automation_agent.py</span>
-          </div>
-          <div class="code-content">
-            <span class="code-line"><span class="keyword">import</span> gspread</span>
-            <span class="code-line"><span class="keyword">import</span> automation</span>
-            <span class="code-line">&nbsp;</span>
-            <span class="code-line"><span class="comment"># Flujo automatizado de datos</span></span>
-            <span class="code-line"><span class="keyword">def</span> <span class="func">procesar_flujo_datos</span>(origen_datos):</span>
-            <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;print(<span class="string">"Leyendo registros..."</span>)</span>
-            <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;datos = origen_datos.get_all()</span>
-            <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># Limpieza y validación automática</span></span>
-            <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;datos_limpios = validar(datos)</span>
-            <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;print(<span class="string">"Sincronizando sistemas..."</span>)</span>
-            <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;resultado = base_datos.save(datos_limpios)</span>
-            <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;notificar_exito(<span class="string">"Sincronización Completada 🎉"</span>)</span>
-            <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> resultado</span>
-            <span class="code-line">&nbsp;</span>
-            <span class="code-line">procesar_flujo_datos(planilla_sheets)</span>
-          </div>
-        </div>
-      </div>
+      <nav class="nav-menu" id="nav-menu" aria-label="Principal">
+        <a href="#que-hago" class="nav-link">Qué hago</a>
+        <a href="#como-trabajo" class="nav-link">Cómo trabajo</a>
+        <a href="#trabajos" class="nav-link">Trabajos</a>
+        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="#preguntas" class="nav-link">Preguntas</a>
+        <a href="#contacto" class="btn btn-small">Hablemos</a>
+      </nav>
     </div>
   </header>
 
-  <!-- ==========================================================================
-       PROBLEMS SECTION
-       ========================================================================== -->
-  <section id="problemas" class="section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-subtitle">Diagnóstico Inicial</span>
-        <h2 class="section-title">El costo invisible del trabajo manual</h2>
-        <p>Hacer tareas repetitivas a mano no solo frena el crecimiento de tu empresa, sino que introduce ineficiencias críticas.</p>
-      </div>
-      
-      <div class="problems-grid">
-        <!-- Problem 1 -->
-        <div class="problem-card reveal">
-          <div class="problem-icon">
-            <i class="fa-solid fa-circle-nodes"></i>
-          </div>
-          <h3 class="problem-title">Pérdida de Tiempo</h3>
-          <p class="problem-text">Tu equipo invierte horas valiosas copiando y pegando información entre planillas de cálculo Excel, bases de datos o sistemas de gestión internos.</p>
-        </div>
-        
-        <!-- Problem 2 -->
-        <div class="problem-card reveal">
-          <div class="problem-icon">
-            <i class="fa-solid fa-triangle-exclamation"></i>
-          </div>
-          <h3 class="problem-title">Errores Operativos</h3>
-          <p class="problem-text">Los procesos manuales son propensos a equivocaciones humanas inevitables en la carga de datos, lo que afecta directamente el control de costos y la toma de decisiones.</p>
-        </div>
-        
-        <!-- Problem 3 -->
-        <div class="problem-card reveal">
-          <div class="problem-icon">
-            <i class="fa-solid fa-hourglass-half"></i>
-          </div>
-          <h3 class="problem-title">Crecimiento Estancado</h3>
-          <p class="problem-text">Los cuellos de botella administrativos ralentizan la entrega de documentación e impiden que el personal se enfoque en tareas de innovación o ventas.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <main id="contenido">
 
-
-  <!-- ==========================================================================
-       PORTFOLIO (SUCCESS CASES) SECTION
-       ========================================================================== -->
-  <section id="portafolio" class="section">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-subtitle">Casos de Éxito</span>
-        <h2 class="section-title">Soluciones que liberan el potencial de tu negocio</h2>
-        <p>Ejemplos reales de procesos manuales complejos y lentos que fueron transformados en flujos de trabajo autónomos, seguros y eficientes.</p>
-      </div>
-      
-      <div class="portfolio-list">
-        <!-- Item 1 -->
-        <div class="portfolio-item reveal">
-          <div class="portfolio-info">
-            <span class="portfolio-tag">Desarrollo Web & Bases de Datos</span>
-            <h3 class="portfolio-name">Dashboard Técnico</h3>
-            <p class="portfolio-description">
-              Migración de planillas tradicionales a un sistema centralizado inter-áreas. Conectamos la información de distintos departamentos en tiempo real bajo una base de datos segura y una interfaz ágil. Se eliminaron procesos manuales redundantes y se agilizó el flujo de comunicación.
-            </p>
-            <div class="portfolio-metrics">
-              <span class="portfolio-metric-badge"><i class="fa-solid fa-chart-line"></i> 100% Digitalizado</span>
-              <span class="portfolio-metric-badge"><i class="fa-solid fa-clock"></i> Acceso en segundos</span>
-            </div>
-            <div class="benefit-box">
-              <div class="benefit-icon">
-                <i class="fa-solid fa-circle-check"></i>
-              </div>
-              <div class="benefit-text">
-                <h4>Impacto Comercial</h4>
-                <p>Digitalización total de procesos, eliminación del papel, trazabilidad absoluta y reducción del tiempo de consulta interna a segundos.</p>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-visual">
-            <img src="assets/dashboard_mockup.png" alt="Dashboard Técnico" class="portfolio-img">
-          </div>
-        </div>
-        
-        <!-- Item 2 -->
-        <div class="portfolio-item reveal">
-          <div class="portfolio-visual">
-            <img src="assets/folders_mockup.png" alt="Creador de Carpetas" class="portfolio-img">
-          </div>
-          <div class="portfolio-info">
-            <span class="portfolio-tag">Automatización de Escritorio</span>
-            <h3 class="portfolio-name">Creador de Carpetas</h3>
-            <p class="portfolio-description">
-              Generador automático de estructuras de almacenamiento. Software a medida que procesa listados de texto o extrae datos desde capturas de pantalla para estructurar y crear cientos de directorios de clientes organizados al instante.
-            </p>
-            <div class="portfolio-metrics">
-              <span class="portfolio-metric-badge"><i class="fa-solid fa-business-time"></i> -40 horas / mes</span>
-              <span class="portfolio-metric-badge"><i class="fa-solid fa-bullseye"></i> Precisión absoluta</span>
-            </div>
-            <div class="benefit-box">
-              <div class="benefit-icon">
-                <i class="fa-solid fa-circle-check"></i>
-              </div>
-              <div class="benefit-text">
-                <h4>Impacto Comercial</h4>
-                <p>Recuperación de decenas de horas mensuales de trabajo administrativo rutinario. Estandarización total y prolijidad en el almacenamiento.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Item 3 -->
-        <div class="portfolio-item reveal">
-          <div class="portfolio-info">
-            <span class="portfolio-tag">Procesamiento de Documentos</span>
-            <h3 class="portfolio-name">Generador de Expedientes</h3>
-            <p class="portfolio-description">
-              Compilador inteligente de expedientes PDF. Sistema que automatiza el ensamblaje, ordenamiento y numeración de archivos. Cuenta con un motor de validación lógica para comprobar la existencia de documentos requeridos (como facturas) antes de cerrar el expediente.
-            </p>
-            <div class="portfolio-metrics">
-              <span class="portfolio-metric-badge"><i class="fa-solid fa-gauge-high"></i> 90% más rápido</span>
-              <span class="portfolio-metric-badge"><i class="fa-solid fa-shield-halved"></i> 0% error humano</span>
-            </div>
-            <div class="benefit-box">
-              <div class="benefit-icon">
-                <i class="fa-solid fa-circle-check"></i>
-              </div>
-              <div class="benefit-text">
-                <h4>Impacto Comercial</h4>
-                <p>100% de precisión y control en la preparación de expedientes oficiales entregados a clientes, reduciendo auditorías o devoluciones por errores humanos.</p>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-visual">
-            <img src="assets/pdf_mockup.png" alt="Generador de Expedientes" class="portfolio-img">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       ABOUT ME SECTION
-       ========================================================================== -->
-  <section id="sobre-mi" class="section">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-visual reveal">
-          <div class="about-img-wrapper">
-            <img src="assets/developer_avatar.png" alt="Leandro Sesto Desarrollador" class="about-avatar">
-          </div>
-        </div>
-        
-        <div class="about-info reveal">
-          <span class="section-subtitle">Perfil del Desarrollador</span>
-          <h2 class="section-title">Sobre mí</h2>
-          <p class="about-text">
-            Soy Leandro Sesto, programador de agentes de automatización utilizando Python y las herramientas del ecosistema Google (Sheets, Drive, Apps Script). Mi enfoque está orientado 100% al valor empresarial: me concentro en analizar y modelar procesos para eliminar la ineficiencia, transformándolos en flujos autónomos que le devuelven tiempo productivo a tu equipo.
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Automatización de tareas administrativas · Remoto, toda Latinoamérica</p>
+          <h1>Tu equipo no debería pasar el día copiando datos de una planilla a otra.</h1>
+          <p class="lead">
+            Automatizo las tareas administrativas repetitivas de tu empresa: planillas, PDFs, carpetas, informes.
+            Sin cambiar las herramientas que ya usas y con precio cerrado antes de empezar.
           </p>
-          
-          <h3 class="skills-title">Herramientas y Competencias</h3>
-          <div class="skills-list">
-            <span class="skill-tag"><i class="fa-brands fa-python"></i> Python (ETL / Automatización)</span>
-            <span class="skill-tag"><i class="fa-brands fa-google"></i> Google Apps Script</span>
-            <span class="skill-tag"><i class="fa-solid fa-table"></i> Google Sheets & APIs</span>
-            <span class="skill-tag"><i class="fa-solid fa-database"></i> Integración de Sistemas</span>
-            <span class="skill-tag"><i class="fa-solid fa-file-invoice-dollar"></i> Procesamiento PDF y OCR</span>
-            <span class="skill-tag"><i class="fa-solid fa-robot"></i> Agentes Autónomos</span>
+          <div class="cta-row">
+            <a href="https://wa.me/5492235449927?text=Hola%20Leandro%2C%20quiero%20consultarte%20por%20una%20tarea%20que%20me%20gustar%C3%ADa%20automatizar." target="_blank" rel="noopener" class="btn btn-primary">
+              Cuéntame qué tarea te quita más tiempo
+            </a>
+            <a href="#trabajos" class="link-arrow">Ver trabajos reales <span aria-hidden="true">→</span></a>
+          </div>
+          <ul class="assurances">
+            <li>Diagnóstico inicial de 15 minutos, sin costo</li>
+            <li>Soporte posterior incluido en cada proyecto</li>
+            <li>Tus datos no salen de tus cuentas</li>
+          </ul>
+        </div>
+
+        <figure class="hero-figure">
+          <div class="frame">
+            <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img src="assets/proyecto-gestion-detalle.jpg" alt="Panel de gestión de órdenes con filtros por estado, región y búsqueda (datos de personas anonimizados)" width="760" height="400">
+          </div>
+          <figcaption>Panel centralizado que reemplazó un circuito de planillas y papel. Datos personales anonimizados.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SITUACIONES -->
+    <section class="section" id="que-hago">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">¿Te suena familiar?</p>
+          <h2>Si alguien de tu equipo hace esto todas las semanas, se puede automatizar.</h2>
+        </header>
+
+        <div class="situations">
+          <article class="situation">
+            <h3>Copiar y pegar entre planillas</h3>
+            <p>Datos que viven en un Excel, se vuelven a escribir en otro y terminan en un sistema interno. Cada traspaso es tiempo perdido y una chance de equivocarse.</p>
+          </article>
+          <article class="situation">
+            <h3>Armar documentos a mano</h3>
+            <p>Reunir PDFs, ordenarlos, numerarlos y comprobar que no falte ninguno. Una tarea que consume horas y exige atención total.</p>
+          </article>
+          <article class="situation">
+            <h3>Informes que se rehacen cada mes</h3>
+            <p>El mismo reporte, con los mismos pasos, cada cierre. Si depende de una sola persona, también depende de que ese día no falte.</p>
+          </article>
+        </div>
+
+        <p class="cost-note">
+          El costo no aparece en ninguna factura: son horas de personas capacitadas dedicadas a tareas que una máquina hace en segundos.
+          Cada mes que pasa, esas horas se pierden otra vez.
+        </p>
+
+        <div class="what-list">
+          <h3>Qué puedo automatizar</h3>
+          <ul>
+            <li>Carga y traspaso de datos entre planillas y sistemas</li>
+            <li>Armado, orden y control de documentos PDF</li>
+            <li>Creación masiva de carpetas y archivos organizados</li>
+            <li>Informes y paneles que se actualizan solos</li>
+            <li>Avisos y validaciones automáticas de datos</li>
+            <li>Conexión entre Google Sheets, Drive, correo y otras herramientas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO TRABAJO -->
+    <section class="section section-tint" id="como-trabajo">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Cómo trabajo</p>
+          <h2>Tres pasos, sin sorpresas.</h2>
+        </header>
+
+        <ol class="steps">
+          <li>
+            <span class="step-n">1</span>
+            <h3>Conversamos 15 minutos</h3>
+            <p>Me muestras cómo haces hoy la tarea, compartiendo pantalla. No necesitas preparar nada ni conocer términos técnicos.</p>
+          </li>
+          <li>
+            <span class="step-n">2</span>
+            <h3>Te digo qué se puede hacer</h3>
+            <p>Te respondo con claridad si es automatizable, cuánto tiempo te ahorraría y cuánto cuesta. El precio es cerrado, por proyecto completo.</p>
+          </li>
+          <li>
+            <span class="step-n">3</span>
+            <h3>Lo construyo y te lo dejo funcionando</h3>
+            <p>Entrego la solución probada, con documentación y un período de soporte posterior para ajustar cualquier detalle.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TRABAJOS -->
+    <section class="section" id="trabajos">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Trabajos realizados</p>
+          <h2>Procesos reales que dejaron de hacerse a mano.</h2>
+          <p class="section-sub">Desarrollados para el área administrativa de una empresa de salud de Mar del Plata, y en uso diario.</p>
+        </header>
+
+        <div class="cases">
+
+          <article class="case">
+            <div class="case-media">
+              <div class="frame">
+                <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                <img src="assets/proyecto-gestion-prestaciones.jpg" alt="Panel de gestión de órdenes, con datos personales anonimizados" width="1365" height="595">
+              </div>
+            </div>
+            <div class="case-body">
+              <p class="case-tag">Panel de gestión</p>
+              <h3>De planillas sueltas a un sistema único para todas las áreas</h3>
+              <dl>
+                <dt>El problema</dt>
+                <dd>La información de cada sector vivía en planillas distintas y en papel. Encontrar un dato llevaba tiempo y no había forma de saber en qué estado estaba cada trámite.</dd>
+                <dt>Lo que hice</dt>
+                <dd>Centralicé todo en un panel con base de datos segura, filtros por estado y región, búsqueda inmediata y actualización en vivo.</dd>
+                <dt>El resultado</dt>
+                <dd>Proceso 100 % digitalizado, consulta de cualquier dato en segundos, sin papel y con trazabilidad completa.</dd>
+              </dl>
+            </div>
+          </article>
+
+          <article class="case case-reverse">
+            <div class="case-media">
+              <div class="frame frame-app">
+                <img src="assets/proyecto-carpetas.jpg" alt="Aplicación de escritorio Creador de carpetas" width="1045" height="868">
+              </div>
+            </div>
+            <div class="case-body">
+              <p class="case-tag">Aplicación de escritorio</p>
+              <h3>Cientos de carpetas creadas en segundos</h3>
+              <dl>
+                <dt>El problema</dt>
+                <dd>Cada alta requería crear a mano una estructura de carpetas, una por una, con riesgo de errores de nombre y de orden.</dd>
+                <dt>Lo que hice</dt>
+                <dd>Una aplicación que recibe una lista de nombres, escrita o pegada desde una captura de pantalla, y genera toda la estructura en la ubicación elegida.</dd>
+                <dt>El resultado</dt>
+                <dd>Más de 40 horas por mes recuperadas y un orden idéntico en cada carpeta.</dd>
+              </dl>
+            </div>
+          </article>
+
+          <article class="case">
+            <div class="case-media">
+              <div class="frame frame-app">
+                <img src="assets/proyecto-expedientes.jpg" alt="Aplicación de escritorio Unificador de expedientes" width="913" height="1126">
+              </div>
+            </div>
+            <div class="case-body">
+              <p class="case-tag">Procesamiento de documentos</p>
+              <h3>Expedientes completos, ordenados y verificados</h3>
+              <dl>
+                <dt>El problema</dt>
+                <dd>Armar un expediente implicaba reunir decenas de PDFs, ordenarlos, numerarlos y revisar uno por uno que no faltara ninguna factura.</dd>
+                <dt>Lo que hice</dt>
+                <dd>Un sistema que ensambla, ordena y numera los archivos, y comprueba que estén todos los documentos requeridos antes de cerrar el expediente.</dd>
+                <dt>El resultado</dt>
+                <dd>Un 90 % menos de tiempo de armado y 0 % de error humano en los expedientes entregados.</dd>
+              </dl>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HERRAMIENTA GRATUITA -->
+    <section class="section section-tint" id="gratis">
+      <div class="wrap gift">
+        <div>
+          <p class="eyebrow">Para que lo pruebes</p>
+          <h2>Unificador de PDF gratuito, que funciona sin internet.</h2>
+          <p>
+            Una herramienta para Windows que une PDFs en tu propia computadora, sin subir documentos a servidores de terceros.
+            Arrastras los archivos, reordenas o giras las páginas, y listo. Sin límite de archivos ni suscripciones.
+          </p>
+          <a href="https://github.com/leandrosesto-aut/automatizaciones/releases/tag/v1.0.0" target="_blank" rel="noopener" class="btn btn-secondary">Descargar para Windows (.exe)</a>
+        </div>
+        <p class="gift-note">Es una muestra de cómo trabajo: herramientas simples, que resuelven una cosa y la resuelven bien.</p>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="section" id="sobre-mi">
+      <div class="wrap about">
+        <figure class="about-photo">
+          <img src="assets/leandro-sesto.jpg" alt="Retrato de Leandro Sesto" width="640" height="640">
+        </figure>
+        <div class="about-copy">
+          <p class="eyebrow">Sobre mí</p>
+          <h2>Soy Leandro. Automatizo tareas administrativas desde adentro.</h2>
+          <p>
+            Trabajo en el área administrativa de una empresa de salud en Mar del Plata, y las soluciones que ves en esta página las desarrollé para resolver problemas reales de mi propio día a día.
+            Conozco la tarea desde el lado de quien la hace, y por eso sé qué automatizar y qué no.
+          </p>
+          <p>
+            Programo en Python y Google Apps Script, pero no necesitas saber nada de eso. Lo que importa es que tu equipo recupere tiempo y que los datos queden bien.
+          </p>
+          <p class="tech-line"><strong>Herramientas:</strong> Python · Google Apps Script · Google Sheets y Drive · Procesamiento de PDF y OCR · Integración de sistemas</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GARANTÍAS -->
+    <section class="section section-tint" id="garantias">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Lo que puedes esperar</p>
+          <h2>Pensado para que decidir sea fácil.</h2>
+        </header>
+        <div class="promises">
+          <div>
+            <h3>Precio cerrado</h3>
+            <p>Sabes cuánto cuesta el proyecto completo antes de empezar. Sin horas que se acumulan ni cargos sorpresa.</p>
+          </div>
+          <div>
+            <h3>Sin costos mensuales ocultos</h3>
+            <p>Siempre que es posible uso herramientas gratuitas como Google Apps Script, para que no pagues licencias ni servidores.</p>
+          </div>
+          <div>
+            <h3>Tus datos, bajo tu control</h3>
+            <p>Trabajo con las APIs oficiales de Google y solo accedo a lo que tú autorizas.</p>
+          </div>
+          <div>
+            <h3>Soporte después de la entrega</h3>
+            <p>Todo se entrega documentado y con registro de errores. Si algo se desajusta en el período de soporte, lo corrijo sin costo.</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ==========================================================================
-       FAQS SECTION
-       ========================================================================== -->
-  <section id="faqs" class="section bg-light-alt">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-subtitle">Preguntas Frecuentes</span>
-        <h2 class="section-title">Respuestas a dudas comunes</h2>
-        <p>Entiende cómo trabajo, la seguridad de tus datos y el alcance de las automatizaciones.</p>
-      </div>
+    <!-- PREGUNTAS -->
+    <section class="section" id="preguntas">
+      <div class="wrap narrow">
+        <header class="section-head">
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2>Lo que suelen preguntarme antes de empezar.</h2>
+        </header>
 
-      <div class="faq-accordion reveal">
-        <!-- FAQ 1 -->
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>¿Es seguro integrar mis planillas de Google Sheets con Python?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>Totalmente. La conexión se realiza utilizando las APIs oficiales de Google y credenciales de cuenta de servicio cifradas. Solo se accede a los documentos que tú autorices y el código se ejecuta bajo estándares de seguridad recomendados.</p>
-            </div>
+        <div class="faq">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>¿Cuánto cuesta?</span><i aria-hidden="true"></i></button>
+            <div class="faq-a"><p>Depende de la tarea. Cada proyecto tiene un precio cerrado que te informo después del diagnóstico inicial, antes de que decidas nada. Si no es automatizable o no conviene, también te lo digo.</p></div>
           </div>
-        </div>
-
-        <!-- FAQ 2 -->
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>¿Requiere el pago de licencias mensuales o servidores costosos?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>En la gran mayoría de los casos, no. Aprovecho el ecosistema de Google Apps Script, o ejecuto scripts de Python de forma local o en capas de servicios en la nube. Te propondré la opción más rentable y escalable para tu caso.</p>
-            </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>¿Trabajas con empresas de otros países?</span><i aria-hidden="true"></i></button>
+            <div class="faq-a"><p>Sí. Trabajo de forma remota con empresas de toda Latinoamérica. Las reuniones son por videollamada y todo se entrega en formato digital.</p></div>
           </div>
-        </div>
-
-        <!-- FAQ 3 -->
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>¿Qué pasa si Google actualiza sus herramientas y el código falla?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>Todas las soluciones se entregan con documentación clara y manejo de errores (logs) para saber exactamente qué falló. Además, ofrezco un periodo de garantía de soporte tras la entrega del proyecto para corregir cualquier desajuste sin costo adicional.</p>
-            </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>¿Cómo es el diagnóstico inicial gratuito?</span><i aria-hidden="true"></i></button>
+            <div class="faq-a"><p>Es una videollamada de 15 minutos. Me compartes tu pantalla, me muestras cómo haces la tarea hoy y te digo si se puede automatizar, cuánto tiempo te ahorraría y qué necesitaríamos.</p></div>
           </div>
-        </div>
-
-        <!-- FAQ 4 -->
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>¿Cómo se realiza el diagnóstico inicial gratuito?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              <p>Agendamos una breve reunión virtual de 15 minutos. Me compartes tu pantalla, me muestras el flujo manual actual y te digo de inmediato si es automatizable, cuánto tiempo te ahorrará y qué herramientas necesitamos utilizar.</p>
-            </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>¿Es seguro conectar mis planillas de Google Sheets?</span><i aria-hidden="true"></i></button>
+            <div class="faq-a"><p>Sí. La conexión usa las APIs oficiales de Google y credenciales cifradas. Solo se accede a los documentos que tú autorices.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>¿Tengo que pagar licencias mensuales o servidores?</span><i aria-hidden="true"></i></button>
+            <div class="faq-a"><p>En la gran mayoría de los casos, no. Aprovecho Google Apps Script o programas que corren en tu propia computadora. Si un caso requiere otra cosa, te propongo la opción más económica antes de empezar.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>¿Qué pasa si Google cambia algo y deja de funcionar?</span><i aria-hidden="true"></i></button>
+            <div class="faq-a"><p>Todo se entrega con documentación y registro de errores, para saber con exactitud qué falló. Durante el período de soporte posterior a la entrega corrijo cualquier desajuste sin costo adicional.</p></div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ==========================================================================
-       CONTACT SECTION
-       ========================================================================== -->
-  <section id="contacto" class="section">
-    <div class="container">
-      <div class="contact-card reveal">
-        <div class="contact-grid-layout">
-          <!-- Info Column -->
-          <div class="contact-info">
-            <span class="section-subtitle">¿Empezamos?</span>
-            <h2 class="contact-title">Solicita un Diagnóstico Gratuito</h2>
-            <p class="contact-description">
-              Conversemos durante 15 minutos para analizar qué tarea manual te está consumiendo tiempo. Evaluaré tu proceso y te propondré la mejor arquitectura técnica para automatizarlo de forma escalable.
-            </p>
-            
-            <div class="contact-actions-vertical">
-              <a href="https://wa.me/2235449927" target="_blank" class="btn btn-whatsapp w-full">
-                <i class="fa-brands fa-whatsapp"></i> Escríbeme por WhatsApp
-              </a>
-              
-              <div class="email-copy-wrapper">
-                <div class="email-btn-group">
-                  <a href="mailto:leandromsesto@gmail.com" class="email-link" id="email-link">
-                    <i class="fa-regular fa-envelope"></i> leandromsesto@gmail.com
-                  </a>
-                  <button class="btn-copy" id="btn-copy" aria-label="Copiar email" title="Copiar email al portapapeles">
-                    <i class="fa-regular fa-copy"></i>
-                  </button>
-                </div>
-                <span class="tooltip" id="copy-tooltip">¡Copiado!</span>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Form Column -->
-          <div class="contact-form-wrapper">
-            <form id="contact-form" class="contact-form" autocomplete="on">
-              <div class="form-group">
-                <label for="form-name" class="form-label">Nombre</label>
-                <input type="text" id="form-name" class="form-input" placeholder="Tu nombre completo" required>
-              </div>
-              
-              <div class="form-group">
-                <label for="form-email" class="form-label">Email</label>
-                <input type="email" id="form-email" class="form-input" placeholder="tu@correo.com" required>
-              </div>
-              
-              <div class="form-group">
-                <label for="form-role" class="form-label">Área / Puesto</label>
-                <input type="text" id="form-role" class="form-input" placeholder="Ej. Operaciones, Ventas, Admin" required>
-              </div>
-              
-              <div class="form-group">
-                <label for="form-message" class="form-label">Proceso manual a automatizar</label>
-                <textarea id="form-message" class="form-input form-textarea" placeholder="Ej: Pasar datos de PDFs recibidos por mail a una planilla de Google Sheets..." required></textarea>
-              </div>
-              
-              <button type="submit" class="btn btn-primary w-full" id="btn-submit-form">
-                <span>Enviar Solicitud</span> <i class="fa-solid fa-paper-plane"></i>
-              </button>
-            </form>
-            <div id="form-success" class="form-success-message" style="display: none;">
-              <div class="success-icon">
-                <i class="fa-solid fa-circle-check"></i>
-              </div>
-              <h3>¡Solicitud Recibida!</h3>
-              <p>Me pondré en contacto contigo en las próximas 24 horas hábiles para coordinar el diagnóstico gratuito.</p>
+    <!-- CONTACTO -->
+    <section class="section contact" id="contacto">
+      <div class="wrap contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow eyebrow-light">Primer paso</p>
+          <h2>Cuéntame qué tarea te quita más tiempo.</h2>
+          <p>
+            En 15 minutos te digo si se puede automatizar y cuánto tiempo te ahorraría. Sin costo y sin compromiso.
+            Respondo en el día hábil.
+          </p>
+          <div class="contact-actions">
+            <a href="https://wa.me/5492235449927?text=Hola%20Leandro%2C%20quiero%20consultarte%20por%20una%20tarea%20que%20me%20gustar%C3%ADa%20automatizar." target="_blank" rel="noopener" class="btn btn-light">Escribirme por WhatsApp</a>
+            <div class="email-copy">
+              <a href="mailto:leandromsesto@gmail.com" id="email-link">leandromsesto@gmail.com</a>
+              <button type="button" id="btn-copy" aria-label="Copiar correo">Copiar</button>
+              <span class="tooltip" id="copy-tooltip" role="status">Copiado</span>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ==========================================================================
-       FOOTER
-       ========================================================================== -->
-<footer class="footer">
-    <div class="container text-center">
-      <div class="footer-copy">
-        &copy; 2026 - Idea y Desarrollo por Leandro Sesto. Todos los derechos reservados.
+        <div class="form-card">
+          <form id="contact-form" class="contact-form" autocomplete="on" novalidate>
+            <div class="field">
+              <label for="form-name">Nombre</label>
+              <input type="text" id="form-name" name="nombre" placeholder="Tu nombre" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="form-email">Correo</label>
+              <input type="email" id="form-email" name="email" placeholder="tu@correo.com" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="form-role">Área o puesto</label>
+              <input type="text" id="form-role" name="area" placeholder="Ej. Administración, Operaciones, Ventas" required>
+            </div>
+            <div class="field">
+              <label for="form-message">¿Qué tarea te gustaría automatizar?</label>
+              <textarea id="form-message" name="mensaje" rows="4" placeholder="Ej. Pasar los datos de los PDFs que llegan por correo a una planilla." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="btn-submit-form">Enviar consulta</button>
+            <p class="form-note">Te respondo en el día hábil. Tus datos se usan solo para contactarte.</p>
+          </form>
+          <div id="form-success" class="form-success" hidden>
+            <h3>Recibí tu consulta</h3>
+            <p>Te escribo en las próximas 24 horas hábiles para coordinar los 15 minutos de diagnóstico.</p>
+          </div>
+        </div>
       </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>&copy; 2026 Leandro Sesto. Todos los derechos reservados.</span>
+      <span>Mar del Plata, Argentina · Trabajo remoto en toda Latinoamérica</span>
     </div>
   </footer>
 
