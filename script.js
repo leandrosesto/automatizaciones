@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. APARICIÓN SUAVE AL HACER SCROLL
   // ==========================================================================
   const revealTargets = document.querySelectorAll(
-    '.situation, .steps li, .case, .gift, .about, .promises > div, .faq, .contact-grid'
+    '.situation, .steps li, .case, .gift, .about, .promises > div, .faq, .contact-grid, .stats-grid'
   );
   revealTargets.forEach((el) => el.classList.add('reveal'));
 
@@ -39,7 +39,46 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================================================
-  // 3. PREGUNTAS FRECUENTES
+  // 3. ANIMACIONES: CONTADORES E IMÁGENES
+  // ==========================================================================
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const animateCount = (el) => {
+    const target = Number(el.dataset.count);
+    const prefix = el.dataset.prefix || '';
+    const suffix = el.dataset.suffix || '';
+    const duration = 1600;
+    const start = performance.now();
+    const ease = (t) => 1 - Math.pow(1 - t, 3);
+
+    const tick = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      el.textContent = prefix + Math.round(target * ease(progress)) + suffix;
+      if (progress < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+
+  const counters = document.querySelectorAll('[data-count]');
+  if (counters.length && 'IntersectionObserver' in window && !reduceMotion) {
+    counters.forEach((el) => {
+      el.textContent = (el.dataset.prefix || '') + '0' + (el.dataset.suffix || '');
+    });
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCount(entry.target);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.6 });
+    counters.forEach((el) => counterObserver.observe(el));
+  }
+
+  document.querySelectorAll('.case-media, .hero-figure, .about-photo').forEach((el) => el.classList.add('media'));
+
+  // ==========================================================================
+  // 4. PREGUNTAS FRECUENTES
   // ==========================================================================
   const faqQuestions = document.querySelectorAll('.faq-q');
 
@@ -61,33 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================================================
-  // 4. COPIAR CORREO
-  // ==========================================================================
-  const btnCopy = document.getElementById('btn-copy');
-  const tooltip = document.getElementById('copy-tooltip');
-  const emailLink = document.getElementById('email-link');
-
-  if (btnCopy && emailLink) {
-    btnCopy.addEventListener('click', async () => {
-      const email = emailLink.textContent.trim();
-      try {
-        await navigator.clipboard.writeText(email);
-      } catch (err) {
-        const tmp = document.createElement('textarea');
-        tmp.value = email;
-        document.body.appendChild(tmp);
-        tmp.select();
-        document.execCommand('copy');
-        document.body.removeChild(tmp);
-      }
-      if (tooltip) {
-        tooltip.classList.add('show');
-        setTimeout(() => tooltip.classList.remove('show'), 1800);
-      }
-    });
-  }
-
-  // ==========================================================================
   // 5. FORMULARIO DE CONTACTO (GOOGLE APPS SCRIPT)
   // ==========================================================================
   const contactForm = document.getElementById('contact-form');
@@ -101,7 +113,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const fields = {
       name: document.getElementById('form-name'),
       email: document.getElementById('form-email'),
-      role: document.getElementById('form-role'),
       message: document.getElementById('form-message')
     };
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -124,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const formParams = new URLSearchParams({
         Nombre: fields.name.value.trim(),
         Email: fields.email.value.trim(),
-        Area_Puesto: fields.role.value.trim(),
+        Area_Puesto: '',
         Mensaje: fields.message.value.trim()
       });
 

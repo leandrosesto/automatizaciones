@@ -294,6 +294,20 @@ button { font: inherit; }
 .footer { padding: 28px 0; font-size: 0.88rem; color: var(--muted); background: #fff; border-top: 1px solid var(--line); }
 .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
 
+/* ---------- Imágenes de muestra ---------- */
+.media img { transition: transform .6s cubic-bezier(.2, .7, .2, 1), box-shadow .4s ease; }
+.js .case-media.media, .js .about-photo.media { overflow: hidden; }
+.js .reveal .frame, .js .reveal .about-photo img { transform: translateY(18px) scale(.97); transition: transform .8s cubic-bezier(.2, .7, .2, 1); }
+.js .reveal.in .frame, .js .reveal.in .about-photo img { transform: none; }
+.frame { transition: transform .35s ease, box-shadow .35s ease; }
+.case:hover .frame, .hero-figure:hover .frame { transform: translateY(-4px); box-shadow: 0 2px 4px rgba(15, 27, 51, .06), 0 22px 44px -18px rgba(15, 27, 51, .32); }
+.about-photo img { transition: transform .5s ease; }
+.about-photo:hover img { transform: scale(1.015); }
+
+@keyframes float-soft { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+.hero-figure .frame { animation: float-soft 7s ease-in-out infinite; }
+.hero-figure:hover .frame { animation-play-state: paused; }
+
 /* ---------- Aparición suave ---------- */
 .js .reveal { opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s ease; }
 .js .reveal.in { opacity: 1; transform: none; }
@@ -302,6 +316,9 @@ button { font: inherit; }
   html { scroll-behavior: auto; }
   .js .reveal { opacity: 1; transform: none; transition: none; }
   .faq-a { transition: none; }
+  .hero-figure .frame { animation: none; }
+  .js .reveal .frame, .js .reveal .about-photo img { transform: none; transition: none; }
+  .frame, .about-photo img { transition: none; }
 }
 
 /* ---------- Responsive ---------- */
