@@ -2,6 +2,40 @@ document.addEventListener('DOMContentLoaded', () => {
   document.documentElement.classList.add('js');
 
   // ==========================================================================
+  // 0. MODO CLARO / OSCURO
+  // ==========================================================================
+  const root = document.documentElement;
+  const themeToggle = document.getElementById('theme-toggle');
+  const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+  const applyTheme = (theme) => {
+    root.setAttribute('data-theme', theme);
+    if (themeToggle) {
+      const isDark = theme === 'dark';
+      themeToggle.setAttribute('aria-pressed', String(isDark));
+      themeToggle.setAttribute('aria-label', isDark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro');
+    }
+  };
+  applyTheme(root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light');
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.classList.add('theme-anim');
+      applyTheme(next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      setTimeout(() => root.classList.remove('theme-anim'), 450);
+    });
+  }
+
+  // Si la persona nunca eligió un tema, se sigue el del sistema
+  systemDark.addEventListener('change', (e) => {
+    let saved = null;
+    try { saved = localStorage.getItem('theme'); } catch (err) {}
+    if (!saved) applyTheme(e.matches ? 'dark' : 'light');
+  });
+
+  // ==========================================================================
   // 1. MENÚ MÓVIL
   // ==========================================================================
   const navToggle = document.getElementById('nav-toggle');
