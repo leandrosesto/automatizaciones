@@ -41,13 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================================================
   // 3. ANIMACIONES: CONTADORES E IMÁGENES
   // ==========================================================================
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
   const animateCount = (el) => {
     const target = Number(el.dataset.count);
     const prefix = el.dataset.prefix || '';
     const suffix = el.dataset.suffix || '';
-    const duration = 1600;
+    const duration = 1800;
     const start = performance.now();
     const ease = (t) => 1 - Math.pow(1 - t, 3);
 
@@ -60,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const counters = document.querySelectorAll('[data-count]');
-  if (counters.length && 'IntersectionObserver' in window && !reduceMotion) {
+  if (counters.length && 'IntersectionObserver' in window) {
     counters.forEach((el) => {
       el.textContent = (el.dataset.prefix || '') + '0' + (el.dataset.suffix || '');
     });
