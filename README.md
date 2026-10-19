@@ -1,10 +1,10 @@
 # Automatización de Procesos | Leandro Sesto
 
-[![Visitar Web](https://img.shields.io/badge/Visitar_Portafolio-Sitio_Oficial-blue?style=for-the-badge)](https://leandrosesto-aut.github.io/automatizaciones/)
+[![Visitar Web](https://img.shields.io/badge/Visitar_Portafolio-Sitio_Oficial-blue?style=for-the-badge)](https://leandrosesto.github.io/automatizaciones/)
 
 Bienvenido a mi repositorio oficial. Desarrollo soluciones automatizando procesos con agentes (más conocidos como "bots") a medida, también con Python y Google Scripts. Conecto tus sistemas, elimino fallas operativas y libero a tu equipo para lo verdaderamente importante.
 
-🌐 **Web oficial para agendar un diagnóstico sin costo:** [leandrosesto-aut.github.io/automatizaciones](https://leandrosesto-aut.github.io/automatizaciones/)
+🌐 **Web oficial para agendar un diagnóstico sin costo:** [leandrosesto-aut.github.io/automatizaciones](https://leandrosesto.github.io/automatizaciones/)
 
 ## 🚀 El costo invisible del trabajo manual
 
